@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Corpo da página com gradiente animado */
 body {
   font-family: 'Verdana', sans-serif;
   color: #fff;
@@ -17,9 +18,17 @@ body {
 
 /* Gradiente animado */
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -58,7 +67,7 @@ header h1 {
   width: 100%;
   max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgb(33, 122, 117)
+  box-shadow: 0 0 15px rgb(33, 122, 117);
 }
 
 .sobre h2,
@@ -131,4 +140,52 @@ footer {
   font-style: italic;
   font-size: 0.9em;
   color: #ccc;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    padding: 0 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  section p,
+  section h2 {
+    padding: 0 10px;
+  }
+
+  .foto img {
+    max-width: 100%;
+  }
+
+  button,
+  .botao-whatsapp {
+    width: 90%;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* ... outros estilos já existentes ... */
+
+  #chave-pix {
+    display: block;
+    font-size: 1.4em;
+    word-break: break-word;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .pix {
+    padding: 15px;
+  }
 }
