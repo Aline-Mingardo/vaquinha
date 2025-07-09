@@ -89,11 +89,17 @@ header h1 {
   border-radius: 10px;
   text-align: center;
   margin-top: 20px;
+  max-width: 100%;
+  overflow-wrap: break-word; /* ajuda a quebrar texto longo */
 }
 
 .pix strong {
   font-size: 1.6em;
   color: #d84315;
+  display: inline-block;
+  text-align: center;
+  word-break: break-word; /* garante quebra em palavras longas */
+  line-height: 1.4;
 }
 
 .pix button {
@@ -106,6 +112,7 @@ header h1 {
   color: white;
   cursor: pointer;
   transition: background 0.3s ease;
+  max-width: 100%;
 }
 
 .pix button:hover {
@@ -128,6 +135,7 @@ header h1 {
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: background 0.3s ease;
+  max-width: 100%;
 }
 
 .botao-whatsapp:hover {
@@ -151,14 +159,14 @@ footer {
     padding: 20px;
   }
 
- #chave-pix {
-  text-align: center;
-  word-break: break-word;
-  font-size: 0.8em;
-  margin: 10px auto;
-  display: block;
-  width: 70%;
-}
+  #chave-pix {
+    text-align: center;
+    word-break: break-word;
+    font-size: 1em; /* aumentei um pouco para melhor leitura */
+    margin: 10px auto;
+    display: block;
+    width: 90%; /* aumentei para ocupar mais espaço */
+  }
 
   .pix {
     padding: 15px;
@@ -166,9 +174,13 @@ footer {
     box-sizing: border-box;
   }
 
+  .pix strong {
+    font-size: 1.4em;
+  }
+
   button,
   .botao-whatsapp {
-    width: 90%;
-    font-size: 1em;
+    width: 100%; /* para garantir alinhamento total */
+    font-size: 1.1em;
   }
 }
